@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NewsLabel</string>
+    <string name="changing_column">切换栏目</string>
+    <string name="sort_delect">长按排序或删除</string>
+    <string name="add_column">点击添加更多栏目</string>
+    <string name="complete">完成</string>
+    <string-array name="news_label">
+        <item>头条</item>
+        <item>要闻</item>
+        <item>北京</item>
+        <item>财经</item>
+        <item>科技</item>
+        <item>房产</item>
+        <item>轻松一刻</item>
+        <item>段子</item>
+        <item>军事</item>
+        <item>历史</item>
+        <item>政务</item>
+    </string-array>
+    <string-array name="none_label">
+        <item>NBA</item>
+        <item>社会</item>
+        <item>航空</item>
+        <item>娱乐</item>
+        <item>影视歌</item>
+        <item>股票</item>
+        <item>彩票</item>
+        <item>体育</item>
+        <item>中国足球</item>
+        <item>CBA</item>
+    </string-array>
+</resources>

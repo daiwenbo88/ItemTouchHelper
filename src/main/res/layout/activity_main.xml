@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_f8f8f8"
+            android:paddingTop="@dimen/d_5"
+            android:paddingBottom="@dimen/d_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/d_10"
+                android:layout_centerVertical="true"
+                android:text="@string/changing_column"
+                android:textSize="@dimen/s_14" />
+
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/d_10"
+                android:text="@string/complete"
+                android:textSize="@dimen/s_16"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/top_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10"
+            android:paddingEnd="@dimen/d_10"
+            android:paddingLeft="@dimen/d_10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_24"
+            android:layout_marginBottom="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="@dimen/d_10"
+            android:text="@string/sort_delect"
+            android:textColor="@color/c_d3d3d3"
+            android:textSize="@dimen/s_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_24"
+            android:background="@color/c_f8f8f8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d_10"
+            android:text="@string/add_column"
+            android:textSize="@dimen/s_16" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bottom_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f8f8f8"
+            android:paddingEnd="@dimen/d_10"
+            android:paddingLeft="@dimen/d_10"
+            android:paddingTop="@dimen/d_10" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
